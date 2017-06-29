@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!--     <link href="font-awesome.min.css" rel="stylesheet" type="text/css">
+ -->
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+</head>
+
+<body class="back1">
+    <div class="card card-5" style="background-color: #332f2f; padding-left:20px;padding-right:20px;margin-left:10%;margin-right:10%;margin-top:20px;margin-bottom:20px;">
+        <br>
+        <br>
+        <div>
+            <h2 class="text-center" style="color:white;">Drum Machine TR-01</h2>
+            <br>
+            <div class="row">
+                <div class="col-xs-12 col-centered text-center">
+                    <button type="button " class="btn btn-default playbtn btn-lg " onclick="start() "> <i class="fa fa-play playicon " aria-hidden="true "></i> </button>
+                    <button type="button " class="btn btn-default pausebtn btn-lg " onclick="pause() "> <i class="fa fa-pause playicon " aria-hidden="true "></i> </button>
+                    <button type="button " class="btn btn-default stopbtn stopicon btn-lg " onclick="stop() "> <i class="fa fa-stop stopicon " aria-hidden="true "></i></button>
+                    <button type="button " class="btn btn-default clearbtn clearicon btn-lg " onclick="reset() "> clear </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4"></div>
+                <div class="col-sm-4 col-centered text-center">
+                    <h4 style="color:white;">Tempo:</h4>
+                    <div class="input-group ">
+                        <span class="input-group-btn ">
+                            <button type="button " class="btn btn-default btn-number " onclick="changeTempo(-10) " data-type="minus " data-field="quant[1] ">
+                            <span class="glyphicon glyphicon-minus "></span>
+                        </button>
+                        </span>
+                        <input type="text" name="quant[1] " class="form-control input-number tempo " value="120 " min="1 " max="300 ">
+                        <span class="input-group-btn ">
+                            <button type="button " class="btn btn-default btn-number " onclick="changeTempo(10) " data-type="plus " data-field="quant[1] ">
+                            <span class="glyphicon glyphicon-plus "></span>
+                        </button>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-xs-4 "></div>
+            </div>
+            <br>
+            <br>
+        </div>
+        <div class="row hat ">
+            <div class="col-xs-6 ">
+                <div class="row ">
+                    <div class="col-xs-3 ">
+                        <div class="0 work btn pad col-centered "></div>
+                    </div>
+                    <div class="col-xs-3 ">
+                        <div class="1 work btn pad col-centered "></div>
+                    </div>
+                    <div class="col-xs-3 ">
+                        <div class="2 work btn pad col-centered "> </div>
+                    </div>
+                    <div class="col-xs-3 ">
+                        <div class="3 work btn pad col-centered "></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 ">
+                <div class="row ">
+                    <div class="col-xs-3 ">
+                        <div class="4 work btn pad col-centered "></div>
+                    </div>
+                    <div class="col-xs-3 ">
+                        <div class="5 work btn pad col-centered "></div>
+                    </div>
+                    <div class="col-xs-3 ">
+                        <div class="6 work btn pad col-centered "></div>
+                    </div>
+                    <div class="col-xs-3 ">
+                        <div class="7 work btn pad col-centered "></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row snare ">
+            <div class="col-xs-6 ">
+                <div class="row ">
+                    <div class="col-xs-3 ">
+                        <div class="8 work btn pad col-centered "></div>
+                    </div>
+                    <div class="col-xs-3 ">
+                        <div class="9 work btn pad col-centered "></div>
+                    </div>
+                    <div class="col-xs-3 ">
+                        <div class="10 work btn pad col-centered "> </div>
+                    </div>
+                    <div class="col-xs-3 ">
+                        <div class="11 work btn pad col-centered "></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 ">
+                <div class="row ">
+                    <div class="col-xs-3 ">
+                        <div class="12 work btn pad col-centered "></div>
+                    </div>
+                    <div class="col-xs-3 ">
+                        <div class="13 work btn pad col-centered "></div>
+                    </div>
+                    <div class="col-xs-3 ">
+                        <div class="14 work btn pad col-centered "></div>
+                    </div>
+                    <div class="col-xs-3 ">
+                        <div class="15 work btn pad col-centered "></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row kick ">
+            <div class="col-xs-6 ">
+                <div class="row ">
+                    <div class="col-xs-3 ">
+                        <div class="16 work btn pad col-centered "></div>
+                    </div>
+                    <div class="col-xs-3 ">
+                        <div class="17 work btn pad col-centered "></div>
+                    </div>
+                    <div class="col-xs-3 ">
+                        <div class="18 work btn pad col-centered "> </div>
+                    </div>
+                    <div class="col-xs-3 ">
+                        <div class="19 work btn pad col-centered "></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 ">
+                <div class="row ">
+                    <div class="col-xs-3 ">
+                        <div class="20 work btn pad col-centered "></div>
+                    </div>
+                    <div class="col-xs-3 ">
+                        <div class="21 work btn pad col-centered "></div>
+                    </div>
+                    <div class="col-xs-3 ">
+                        <div class="22 work btn pad col-centered "></div>
+                    </div>
+                    <div class="col-xs-3 ">
+                        <div class="23 work btn pad col-centered "></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-1.11.0.min.js "></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js "></script>
+<script src="main.js "></script>
+<script src="selector.js "></script>
+</script>

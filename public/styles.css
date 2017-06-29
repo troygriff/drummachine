@@ -1,0 +1,116 @@
+@import url(http://fonts.googleapis.com/css?family=Anton|Roboto+Condensed:400,300,700|Open+Sans:400,300,600);
+body,
+p {
+    font-family: 'Open Sans';
+    sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.back1 {
+    background: #ddd6f3;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #faaca8, #ddd6f3);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #faaca8, #ddd6f3);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.back2 {
+    background: #DE6262;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFB88C, #DE6262);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFB88C, #DE6262);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.back3 {
+    background: #d53369;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #cbad6d, #d53369);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #cbad6d, #d53369);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.back4 {
+    background: #4b6cb7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #182848, #4b6cb7);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #182848, #4b6cb7);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.back5 {
+    background: #FC354C;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0ABFBC, #FC354C);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0ABFBC, #FC354C);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.back6 {
+    background: #5f2c82;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #49a09d, #5f2c82);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.btn {
+    font-family: 'Open Sans';
+    sans-serif;
+    font-weight: 300;
+}
+
+.stopicon:focus {
+    color: white;
+}
+
+.stopbtn:focus {
+    background-color: #F44336;
+}
+
+.clearicon:focus {
+    color: white;
+}
+
+.clearbtn:focus {
+    background-color: #F44336;
+}
+
+.pad {
+    background-color: white;
+    margin: 10px;
+    padding: 50%;
+}
+
+.maschine {
+    background: black;
+}
+
+.vcenter {
+    margin: 1%;
+    padding: 50%;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.card {
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    margin: 1rem;
+    position: relative;
+}
+
+.card-5 {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
